@@ -1,0 +1,158 @@
+\documentclass[a4paper,12pt,twoside]{article}
+
+% ----- German -----
+\usepackage[ngerman]{babel} % Neue deutsche Rechtschreibung
+
+% ----- Font -----
+\usepackage[utf8]{inputenc} % Kodierung des Eingabezeichensatzes
+\usepackage{notomath}
+\usepackage[T1]{fontenc}
+
+% ----- Layout / Design -----
+\usepackage{geometry}       % Seitenlayout
+\usepackage{fancyhdr}       % Kopf- & Fußzeilen
+\usepackage{parskip}		% Entfernung der Einrückung eines Absatzes
+\usepackage{float}          % Besseres Float-Management
+
+% ----- Other -----
+\usepackage{enumitem}       % Aufzählungen
+\usepackage{calc}           % Berechnungen
+
+
+
+% Define pages
+\geometry{a4paper, portrait, inner=3cm, outer=3cm, tmargin=3cm, bmargin=3cm}
+
+% Einstellungen für Kopf- und Fußzeile
+\pagestyle{fancy}
+\fancyhf{}                              % Löschen der Vorbelegung
+
+% Kopfzeile
+\setlength{\headheight}{10mm}           % Höhe der Kopfzeile
+\fancyhead[EC,OC]{Rommé-Regeln v1.1}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headruleskip}{2mm}
+
+% Fußzeile
+\fancyfoot[EC,OC]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\footruleskip}{2mm}
+
+
+\begin{document}
+
+
+\section{Vorbereitung}
+
+\begin{itemize}
+    \item Es wird mit 2-6 Spielern gespielt.
+    \item Benötigt werden zwei Rommé-Kartendecks (à 55 Karten) mit sechs \textsc{Jokern}. Jede Karte eines Ranges gibt es demnach achtmal (bspw. $8\times\textsc{König}$).
+\end{itemize}
+
+
+
+\section{Ziel des Spiels}
+
+\begin{itemize}
+    \item Eine \textbf{Runde} Rommé endet, sobald ein Spieler keine Karten mehr auf der Hand hat.
+    \item Eine \textbf{Partie} Rommé wird über eine beliebige Anzahl Runden oder eine beliebige Punktzahl gespielt.
+    \item Der Spieler mit der \textbf{niedrigsten} Punktzahl am Ende der Partie gewinnt.
+\end{itemize}
+
+
+
+\section{Die Karten}
+
+\begin{itemize}
+    \item \textsc{Zwei} bis \textsc{Zehn} zählen jeweils ihren \textbf{Zahlenwert}.
+    \item \textsc{Bube}, \textsc{Dame} und \textsc{König} zählen jeweils \textbf{10 Punkte}.
+    \item \textsc{Ass} darf als \textsc{Eins} oder \textsc{Elf} ausgelegt werden und zählen auf der Hand \textbf{11 Punkte}.
+    \item Die \textsc{Joker} werden als \textbf{Ersatzkarten} verwendet und zählt auf der Hand \textbf{20 Punkte}
+    \begin{itemize}
+        \item Ausgelegte \textsc{Joker} (egal wo) dürfen ausgetauscht werden, müssen jedoch auf dem Spieltisch bleiben.
+        \item Mehrere \textsc{Joker} dürfen nebeneinander liegen.
+        \item Am Ende einer Runde dürfen auch \textsc{Joker} auf den \textbf{Ablegestapel} gelegt werden.
+    \end{itemize}
+\end{itemize}
+
+
+
+\clearpage
+
+\section{Beginn einer Runde}
+
+\begin{enumerate}
+    \item Jeder Spieler erhält \textbf{13} Karten.
+    \item Die restlichen Karten bilden den \textbf{Ziehstapel}.
+    \item Nachdem alle Spieler ihre Karten sortiert haben und bereit sind, wird die oberste Karte vom \textbf{Ziehstapel} genommen und offen daneben gelegt. Dies ist der \textbf{Ablegestapel}.
+    \item Der Spieler im Uhrzeigersinn nach dem Geber beginnt.
+\end{enumerate}
+
+
+
+\section{Ablauf einer Runde}
+
+\begin{enumerate}
+    \item Wer an der Reihe ist, muss entweder eine Karte vom \textbf{Ziehstapel} oder vom \textbf{Ablegestapel} aufnehmen.
+    \item Danach dürfen eigene Meldungen ausgelegt und an bestehende Meldungen (auch von anderen Spielern) angelegt werden; sofern deine \textbf{Erstmeldung} ausliegt. An \textsc{Herz 3}, \textsc{Herz 4}, \textsc{Herz 5} darfst du also eine \textsc{Herz 2} oder \textsc{Herz 6} anlegen.
+    \item Am Ende \textbf{muss} eine Karte auf den \textbf{Ablegestapel} abgelegt werden. Dies gilt auch beim Schluss machen.
+    \item Alle anderen Spieler dürfen nun auf den Tisch \textbf{klopfen} um die abgeworfene Karte auf die Hand zu nehmen.
+    \begin{itemize}
+        \item Der Spieler der nun eigentlich am Zug ist hat dabei Vorrecht auf die abgeworfene Karte. Möchte er diese nicht aufnehmen, so darf der Spieler der zuerst geklopft hat, diese Karte aufnehmen.
+        \item Erhältst du eine Karte durch Klopfen, musst du zusätzlich noch eine \textbf{Strafkarte} vom \textbf{Ziehstapel} auf die Hand nehmen.
+    \end{itemize}
+\end{enumerate}
+
+
+
+\section{Ende einer Runde (Schluss machen)}
+
+\begin{itemize}
+    \item Sobald ein Spieler mindestens seine Erstmeldung ausgelegt hat, darf er die Runde beenden indem er seine letzte Karte auf \textbf{Ablegestapel} ablegt.
+    \item Jeder Spieler zählt den Wert seiner Handkarten. Diese werden notiert und mit dem vorherigen Ergebnis summiert.
+\end{itemize}
+
+
+
+\clearpage
+
+\section{Meldungen beim Rommé}
+
+\begin{itemize}
+    \item In jeder Runde muss die \textbf{Erstmeldung} eines Spielers eine \textbf{Mindestpunktzahl} von \textbf{40} erreichen.
+    \item Es dürfen beliebig viele Meldungen mit beliebig vielen Karten ausgelegt werden; auch bei der \textbf{Erstmeldung}.
+    \item Eine Meldung muss aus mindestens \textbf{3 Karten} bestehen. Besteht eine Meldung aus \textbf{exakt} 3 Karten, darf maximal ein (1) \textsc{Joker} eingesetzt werden.
+    \item Zwei Arten von Meldungen sind möglich:
+    \begin{itemize}
+        \item Karten der selben \textbf{Farbe} mit unterschiedlichen \textbf{Werten}, z.\,B.:\\\textsc{Herz 3}, \textsc{Herz 4}, \textsc{Herz 5}.
+        \item Karten des selben \textbf{Wertes} mit unterschiedlichen \textbf{Farben}, z.\,B.:\\\textsc{Pik König}, \textsc{Herz König}, \textsc{Karo König}.
+    \end{itemize}
+    \item Das \textsc{Ass} darf als 1 oder 11 verwendet werden.
+    \item Vor einer 1 und nach einer 11 dürfen weitere Karten angelegt werden, z.\,B.: \textsc{König}, \textsc{Ass}, \textsc{Zwei}
+\end{itemize}
+
+
+\subsection*{Hand-Rommé}
+
+\begin{itemize}
+    \item Gelingt es einem Spieler, der noch keine Erstmeldung ausgelegt hat, sämliche Karten von seiner Hand abzulegen wird dies als Hand-Rommé bezeichnet.
+    \item Beim Hand-Rommé entfällt die Regel der Mindestpunkte für die Erstmeldung.
+    \item Wie sonst auch muss am Ende eine Karte auf den Ablegestapel gelegt werden.
+    \item Die Handkarten der übrigen Spieler werden zur Belohnung \textbf{doppelt} gewertet.
+\end{itemize}
+
+
+\subsection*{Räuber-Rommé (optional)}
+
+\begin{itemize}
+    \item Beim Räuber-Rommé darfst du an ausgelegte Meldungen nicht nur anlegen, sondern auch die Meldungen komplett neu kombinieren.
+    \item Die so gebildeten Meldungen müssen allerdings~-~jede einzeln für sich betrachtet~-~wieder gültige Meldungen sein.
+    \item Dabei dürfen keine Karten vom Spieltisch auf die Hand genommen werden.
+    \item \textsc{Joker} behalten ihre Wertigkeit, auch wenn die entsprechende Meldung zerlegt wird. Soll ein \textsc{Joker} eine neue Wertigkeit erhalten muss dieser regulär ausgetauscht werden.
+\end{itemize}
+
+
+\vfill
+\small\textit{Lizenz: CC0 1.0 Universal}
+
+\end{document}

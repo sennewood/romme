@@ -1,3 +1,7 @@
+## custom
+*.pdf
+miktex-*/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
